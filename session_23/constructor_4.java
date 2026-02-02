@@ -10,8 +10,10 @@ class Circle{
     void area(){
         System.out.println("Area of the circle is " + (pi * radius * radius));
     }
-    
-
+    // Circumference of Circle 
+    void Circumference(){
+        System.out.println("Circumference of circle is " + (2 * pi * radius));
+    }
 
     //setter 
     void setradius(float radius){
@@ -34,9 +36,17 @@ public class constructor_4 {
         
       Circle c1 = new Circle();
 
-        c1.setradius(20.2f);
+        c1.setradius(5.0f);
         c1.getradius();
+        c1.area();
+        c1.Circumference();
 
+        Circle c2 = new Circle();
+        c2.setradius(6.0f);
+
+        c2.getradius();
+        c2.Circumference();
+        c2.area();
 
     }
 }
